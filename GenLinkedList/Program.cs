@@ -21,6 +21,9 @@ namespace GenLinkedList
             Console.WriteLine("-*********************************-");
             list.InsertAtMiddle(4,40);
             list.Display();
+            Console.WriteLine("-*********************************-");
+            list.DeleteFirst();
+            list.Display();
 
 
 

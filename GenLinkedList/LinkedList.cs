@@ -69,7 +69,11 @@ namespace GenLinkedList
             }
             Console.WriteLine("After inserting at last position : " + data);
         }
-
+        /// <summary>
+        /// Method to add element between two elements
+        /// </summary>
+        /// <param name="position"></param>
+        /// <param name="data"></param>
         public void InsertAtMiddle(int position, Gtype data)
         {
             Node<Gtype> node = new Node<Gtype>(data);
@@ -93,6 +97,18 @@ namespace GenLinkedList
                 temp.next = node;
             }
             Console.WriteLine("After inserting at middle between 56 & 70 : " + data);
+        }
+        /// <summary>
+        /// Method to delete the element at first position
+        /// </summary>
+        public void DeleteFirst()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            head = head.next;
+            Console.WriteLine("After deleting First node :");
         }
         /// <summary>
         /// Method to Display the Element in LL
