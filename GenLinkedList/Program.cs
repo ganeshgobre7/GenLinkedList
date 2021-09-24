@@ -12,6 +12,9 @@ namespace GenLinkedList
             list.Add(30);
             list.Add(70);
             list.Display();
+            Console.WriteLine("-*************************************-");
+            list.InsertAtFirst(50);
+            list.Display();
 
         }
     }
