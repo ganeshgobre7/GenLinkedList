@@ -27,6 +27,9 @@ namespace GenLinkedList
             Console.WriteLine("-*********************************-");
             list.DeleteLast();
             list.Display();
+            Console.WriteLine("-*********************************-");
+            list.SearchElement(30);
+
 
 
         }

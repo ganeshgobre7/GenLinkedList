@@ -110,7 +110,9 @@ namespace GenLinkedList
             head = head.next;
             Console.WriteLine("After deleting First node :");
         }
-
+        /// <summary>
+        /// Method to Delete the last element in LL
+        /// </summary>
         public void DeleteLast()
         {
             Node<Gtype>temp = head;
@@ -127,6 +129,33 @@ namespace GenLinkedList
                 temp.next = null;
                 Console.WriteLine("After deleting Last node :");
             }
+        }
+        /// <summary>
+        /// Method to search element in LL
+        /// </summary>
+        /// <param name="dataSearch"></param>
+        public void SearchElement(Gtype dataSearch)
+        {
+            Boolean flag = false;
+            Node<Gtype> temp = head;
+            if (temp == null)
+            {
+                Console.WriteLine("List is Empty");
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    if (temp.data.Equals (dataSearch))
+                    {
+                        flag = true;
+                        break;
+                    }
+                    temp = head.next;
+                }
+                Console.WriteLine(dataSearch + " : " + "Element Found");
+            }
+                           
         }
         /// <summary>
         /// Method to Display the Element in LL
