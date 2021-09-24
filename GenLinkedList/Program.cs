@@ -29,6 +29,11 @@ namespace GenLinkedList
             list.Display();
             Console.WriteLine("-*********************************-");
             list.SearchElement(30);
+            Console.WriteLine("-*********************************-");
+            Console.WriteLine("Inserting any position");
+            list.InsertAtMiddle(2, 65);
+            list.Display();
+           
 
 
 

@@ -96,7 +96,7 @@ namespace GenLinkedList
                 node.next = temp.next;
                 temp.next = node;
             }
-            Console.WriteLine("After inserting at middle between 56 & 70 : " + data);
+            Console.WriteLine("After inserting : " + data);
         }
         /// <summary>
         /// Method to delete the element at first position
@@ -131,7 +131,7 @@ namespace GenLinkedList
             }
         }
         /// <summary>
-        /// Method to search element in LL
+        /// Method to Find element in LL
         /// </summary>
         /// <param name="dataSearch"></param>
         public void SearchElement(Gtype dataSearch)
@@ -154,9 +154,9 @@ namespace GenLinkedList
                     temp = head.next;
                 }
                 Console.WriteLine(dataSearch + " : " + "Element Found");
-            }
-                           
+            }                          
         }
+
         /// <summary>
         /// Method to Display the Element in LL
         /// </summary>
