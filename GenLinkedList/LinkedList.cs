@@ -69,6 +69,31 @@ namespace GenLinkedList
             }
             Console.WriteLine("After inserting at last position : " + data);
         }
+
+        public void InsertAtMiddle(int position, Gtype data)
+        {
+            Node<Gtype> node = new Node<Gtype>(data);
+            if (position < 1)
+                Console.WriteLine("Invalid Position");
+            else if (position == 1)
+            {
+                node.next = head;
+                head = node;
+            }
+            else
+            {
+                Node<Gtype> temp = head;
+
+                while (position > 2)
+                {
+                    temp = temp.next;
+                    position--;
+                }
+                node.next = temp.next;
+                temp.next = node;
+            }
+            Console.WriteLine("After inserting at middle between 56 & 70 : " + data);
+        }
         /// <summary>
         /// Method to Display the Element in LL
         /// </summary>

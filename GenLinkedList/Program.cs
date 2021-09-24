@@ -18,6 +18,10 @@ namespace GenLinkedList
             Console.WriteLine("-*********************************-");
             list.InsertAtLast(90);
             list.Display();
+            Console.WriteLine("-*********************************-");
+            list.InsertAtMiddle(4,40);
+            list.Display();
+
 
 
         }
